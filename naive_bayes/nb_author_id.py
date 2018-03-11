@@ -33,7 +33,7 @@ clf.fit(features_train, labels_train)
 print "training time:", round(time()-t0, 3), "s"
 t0 = time()
 pred = clf.predict(features_test)
-print "predicting time:", round(time()-t0, 3), "s"
+print "prediction time:", round(time()-t0, 3), "s"
 check_pred = pred == labels_test
 accurate_counts = check_pred.sum()
 total_nums = len(pred)
